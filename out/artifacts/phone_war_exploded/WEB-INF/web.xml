@@ -21,6 +21,7 @@
         <url-pattern>/loginServlet</url-pattern>
     </servlet-mapping>
 
+<<<<<<< HEAD
     <servlet>
         <servlet-name>queryServlet</servlet-name>
         <servlet-class>control.QueryAllRecord</servlet-class>
@@ -67,4 +68,14 @@
         <servlet-name>exitServlet</servlet-name>
         <url-pattern>/exitServlet</url-pattern>
     </servlet-mapping>
+=======
+ <!--   <servlet>
+        <servlet-name>queryServlet</servlet-name>
+        <servlet-class>control</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>-->
+>>>>>>> 745c1e38ee76aa8ef22bc5416e03d6060497dc19
 </web-app>

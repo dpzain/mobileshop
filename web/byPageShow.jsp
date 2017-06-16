@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 <%@ page import="com.sun.rowset.CachedRowSetImpl" %>
 <%@ page import="java.sql.*" %>
 <%--
+=======
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.DriverManager" %><%--
+>>>>>>> 745c1e38ee76aa8ef22bc5416e03d6060497dc19
   Created by IntelliJ IDEA.
   User: dpzain
   Date: 2017/6/13
@@ -8,6 +15,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<<<<<<< HEAD
 <jsp:useBean id="dataBean" class="model.DataByPage" scope="session"/>
 <html>
 <head>
@@ -20,6 +28,14 @@
     <%@include file="head.txt"%>
 </header>
 <br>所有产品：<br>
+=======
+<%@ include file="head.txt"%>
+<html>
+<head>
+    <title>同品牌所有手机</title>
+</head>
+<body><br>所有产品：<br>
+>>>>>>> 745c1e38ee76aa8ef22bc5416e03d6060497dc19
 <table border="2">
     <tr>
         <th>手机型号</th>
@@ -29,6 +45,7 @@
         <th>查看详情</th>
         <td><font color="aqua">添加到购物车</font></td>
     </tr>
+<<<<<<< HEAD
     <jsp:setProperty name="dataBean" property="pageSize" param="pageSize"/>
     <jsp:setProperty name="dataBean" property="currentPage" param="currentPage"/>
     nihao<jsp:getProperty name="dataBean" property="currentPage"/>
@@ -121,5 +138,29 @@ test<%=dataBean.getCurrentPage()%>
     输入页码 <input type="text" name="currentPage" value="2" size="3">
     <input type="submit" name="g" value="确定">
 </form>--%>
+=======
+    <jsp:getProperty name="dataBean" property="pageSize" param="pageSize"/>
+    <jsp:getProperty name="dataBean" property="currentPage" param="currentPage"/>
+    <%
+
+    %>
+</table>
+<%--<div align="center">
+    <%
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+        }catch (Exception e){}
+        String uri="jdbc:mysql://127.0.0.1/mobileshop?"+"user=root&password=root";
+        Connection con;
+        Statement sql;
+        ResultSet rs;
+        try{
+            con= DriverManager.getConnection(uri);
+            sql=con.createStatement();
+
+        }
+    %>--%>
+</div>
+>>>>>>> 745c1e38ee76aa8ef22bc5416e03d6060497dc19
 </body>
 </html>

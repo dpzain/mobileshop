@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -153,5 +154,13 @@
     </div>
     <div class="bottom">Copyright ©  皮皮手机网| 皖ICP 备120110119 号| 经营许可证：L-YC-BK12345</div>
 </div>
+=======
+<html>
+<head>
+    <title>智能手机购物网站</title>
+</head>
+<body>
+<%@ include file="head.txt" %>
+>>>>>>> 745c1e38ee76aa8ef22bc5416e03d6060497dc19
 </body>
 </html>

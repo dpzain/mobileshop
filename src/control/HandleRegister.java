@@ -28,14 +28,22 @@ public class HandleRegister extends HttpServlet{
             e.printStackTrace();
         }
     }
+<<<<<<< HEAD
  /*   private String handleString(String s) {
+=======
+    private String handleString(String s) {
+>>>>>>> 745c1e38ee76aa8ef22bc5416e03d6060497dc19
         try {
             s = new String(s.getBytes("iso-8859-1"), "utf-8");
         } catch (Exception e) {
             e.printStackTrace();
         }
         return s;
+<<<<<<< HEAD
     }*/
+=======
+    }
+>>>>>>> 745c1e38ee76aa8ef22bc5416e03d6060497dc19
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

@@ -21,12 +21,50 @@
         <url-pattern>/loginServlet</url-pattern>
     </servlet-mapping>
 
- <!--   <servlet>
+    <servlet>
         <servlet-name>queryServlet</servlet-name>
-        <servlet-class>control</servlet-class>
+        <servlet-class>control.QueryAllRecord</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>loginServlet</servlet-name>
-        <url-pattern>/loginServlet</url-pattern>
-    </servlet-mapping>-->
+        <servlet-name>queryServlet</servlet-name>
+        <url-pattern>/queryServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>putGoodsServlet</servlet-name>
+        <servlet-class>control.PutGoodsToCar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>putGoodsServlet</servlet-name>
+        <url-pattern>/putGoodsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteServlet</servlet-name>
+        <servlet-class>control.HandleDelete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteServlet</servlet-name>
+        <url-pattern>/deleteServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>buyServlet</servlet-name>
+        <servlet-class>control.HandleBuyGoods</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>buyServlet</servlet-name>
+        <url-pattern>/buyServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>exitServlet</servlet-name>
+        <servlet-class>control.HandleExit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>exitServlet</servlet-name>
+        <url-pattern>/exitServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

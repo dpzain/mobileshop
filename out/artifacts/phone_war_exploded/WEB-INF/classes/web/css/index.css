@@ -1,0 +1,240 @@
+@charset "utf-8";
+/*
+#header{
+    width:100%;
+    min-width: 1263px;
+    height:96px;
+    background-color: #ebebeb;
+    positon:relative;
+}
+.logo{
+    width:96px;
+    height:96px;
+    background-images: url(../images/logo.png);
+    float: left;
+    display: inline-block;
+    position:absolute;
+}
+.link{
+
+    width:900px;
+    height:96px;
+    line-height: 96px;
+    color:#000000;
+    float:right;
+    display: inline-block;
+}
+.link li{
+    width:100px;
+    text-align: center;
+    float:left;
+    background-color:#5bc0de;
+}
+ .link a{
+    color:red;
+    display: block;
+}
+ul,ol{
+    list-style: outside none none;
+}
+a{
+    text-decoration: none;
+}
+*/
+/*
+#myCarousel {
+    margin: 50px 0 0 0;
+}*/
+/*整个导航栏*/
+body,h1,h2,h3,ul,ol,p,figure{
+    margin:0;/*设置外边距为0，外边距是指盒子之间的空间*/
+    padding:0;/*设置内边距为0，内边距是指元素与边框之间应显示的距离。*/
+}
+body{
+    background-color:#fff;/*设置body主体的背景颜色*/
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei UI","Microsoft YaHei",SimHei,"宋体",simsun,sans-serif;
+    /*设置body主体中的字体*/
+}
+ul,ol{
+    list-style: outside none none;/*去除列表前面的标记*/
+}
+a{
+    text-decoration: none;/*去除超链接的下划线*/
+}
+.none{
+    display: none;/*display属性用于强制是一个元素成为块级元素或行内元素，当值为none时，指定盒子不被显示，这里是是h2中的网站导航不被显示*/
+}
+#header{
+    /*整体定义导航栏*/
+    width:100%;/*设置宽度为100%*/
+    min-width: 1263px;/*min-width 属性设置元素的最小宽度。*/
+    height:96px;/*设置导航高度*/
+    background-color: #333;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+    positon:relative;
+    z-index: 9999;
+}
+#header .center{
+    width:1263px;
+    height:96px;
+    margin:0 auto;
+}
+#header .logo{
+    /*设置图片的样式*/
+    width:96px;
+    height:96px;
+    background-image: url(../images/logo3.png);
+    text-indent: -9999px;/*文本行缩进*/
+    float:left;/*图片左浮动*/
+}
+#header .link{
+    /*定义导航栏中的链接部分*/
+    width:900px;
+    height:96px;
+    line-height: 96px;/*使文字在导航的中间，line-height与height值一样就实现了这个样式*/
+    color:#eee;
+    float:right;/*链接右浮动*/
+}
+#header .link li{
+    width:100px;
+    line-height: 96px;
+    text-align: center;
+    float:left;/*左浮动*/
+}
+#header .link a{
+    line-height: 96px;
+    color:#eee;
+    display: block;/*将链接定义为块元素*/
+}
+#header .link a:hover,
+#header .active a{
+    background-color: #000;
+}
+/*图片轮播*/
+#navbar-collapse ul {
+    margin-top:0;
+}
+.carousel-inner img {
+    margin: 0 auto;
+}
+.carousel-control {
+    font-size: 100px;
+}
+/*手机信息*/
+#information img{
+    width:500px;
+    height:500px;
+}
+#information{
+    width:1300px;
+    height:1600px;
+    /*background-color:#ccc*/
+    margin:30px auto;
+    text-align: center;
+}
+#information .center h2{
+    font-size: 45px;
+    letter-spacing:2px;
+    color:#666;
+    margin:10px 0;
+}
+#information .center p{
+    color:#666;
+    margin:10px 0;
+}
+#information figure{
+    border:1px solid #000000;
+    display: inline-block;
+    /*padding:4px;*/
+    border-radius: 4px;
+    margin:15px 12px;
+    width:600px;
+    height:700px;
+    text-align: left;
+    position:relative
+}
+
+#information figure img{
+    vertical-align: middle;
+}
+
+#information figcaption{
+    color:#777;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding:7px 0 5px 0;
+}
+
+#information .info{
+    padding:5px 0 0 0;
+}
+#information .title{
+    color:#333;
+    font-weight: normal;
+}
+#information .sat{
+    float:right;
+    font-size:13px;
+    color:#999;
+    font-style:normal;
+    position:relative;
+    top:5px;
+    right:5px;
+}
+#information  .price{
+    color:#f60;
+    font-size:14px;
+}
+#information .price strong{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+hr{
+    width:100%;
+    border:1px solid #000000;
+}
+#footer{
+    height:360px;
+    background-color: #222;
+    clear:both;
+    position: relative;
+    top:20px;
+}
+#footer .top{
+    width:1263px;
+    height:281px;
+    margin:0 auto;
+    text-align: center;
+}
+#footer .block{
+    width:410px;
+    height:280px;
+    display: inline-block;
+    text-align: left;
+    color:#ccc;
+    vertical-align: top;
+}
+#footer h2{
+    font-size:24px;
+    font-weight:normal;
+    padding:20px 0 0 20px;
+}
+#footer hr{
+    width: 90%;
+    border:1px dashed #333;
+}
+#footer ul{
+    font-size:18px;
+    color:#777;
+    text-indent: 20px;
+    line-height: 2;
+}
+#footer .bottom{
+    height:80px;
+    line-height:80px;
+    text-align:center;
+    color:#777;
+    background-color:#000;
+    border-top:1px solid #444;
+}

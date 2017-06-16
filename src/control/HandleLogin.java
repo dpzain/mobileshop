@@ -15,6 +15,7 @@ import java.io.UnsupportedEncodingException;
 import java.sql.*;
 
 /**
+ *
  * Created by dpzain on 2017/6/13.
  */
 public class HandleLogin extends HttpServlet {
@@ -64,7 +65,7 @@ public class HandleLogin extends HttpServlet {
                 }
             }else {
                 String backNews="请输入用户名和密码";
-                //fail(resp,logname,backNews);
+                fail(resp,logname,backNews);
             }
             con.close();
         } catch (SQLException e) {
@@ -97,11 +98,12 @@ public class HandleLogin extends HttpServlet {
             }
             String name=loginBean.getLogname();
             if(name.equals(logname)){  //查看当前用户是否已经登录
+
                 loginBean.setBackNews(logname+"已登录，无需再次登录");
                 loginBean.setLogname(logname);
             }else {   //已有数据模型或新建的数据模型  储存新的登录用户
-                loginBean.setBackNews(logname+"登录成功");
                 loginBean.setLogname(logname);
+                loginBean.setBackNews(logname+"登录成功");
             }
         }catch (Exception ee){
             loginBean=new Login();

@@ -9,8 +9,13 @@
 <html>
 <head>
     <title>选择不同类型手机</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
+<header id="header">
+    <%@include file="head.txt"%>
+</header>
 <div align="center">
     <%
         try {
